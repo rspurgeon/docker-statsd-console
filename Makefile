@@ -1,4 +1,4 @@
-ORGANIZATION := daime
+ORGANIZATION := rspurgeon
 CONTAINER := docker-statsd-console
 
 .PHONY: all build stop run
@@ -12,4 +12,4 @@ stop:
 	-@docker stop $(CONTAINER) > /dev/null
 
 run:
-	-@docker run --rm -p 8125:8125/udp -p 8126:8126 --name $(CONTAINER) $(ORGANIZATION)/$(CONTAINER)
+	-@docker run --rm -d -p 8125:8125/udp -p 8126:8126 --name $(CONTAINER) $(ORGANIZATION)/$(CONTAINER)
