@@ -13,7 +13,7 @@ This project has been built for development and testing purposes. It ensures an 
 #### Clone the repo
 
 ```console
-$ git clone git@github.com:daime/docker-statsd-console.git
+$ git clone git@github.com:rspurgeon/docker-statsd-console.git
 $ cd docker-statsd-console
 ```
 
